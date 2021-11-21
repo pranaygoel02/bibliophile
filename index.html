@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliophilia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/css/scroll_nav.css"> -->
+</head>
+<body>
+<section class="header">
+    <div id="navBar" class="">
+        <nav id="topNavbar" class="topNav navbar-fixed-top">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" oneclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#subscribe">SUBSCRIPTION</a></li>
+                    <li><a href="#contact">CONTACT</a></li>                    
+                    <li class="signup"><a href="">SIGN UP/ LOGIN</a></li>                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" oneclick="showMenu()"></i>
+        </nav>
+    </div>
+    <div class="text-box">
+        <h1 class="header-text">Bibliophilia.</h1>
+        <p>Reading has never been easy before!</p>
+        <a href="#subscribe" class="hero-btn">Subscribe Now</a>
+        <div class="store-btn">
+            <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="images/app-store-badge.svg" alt=""></a>
+            <a href="https://play.google.com/store" target="_blank"><img src="images/google-play-badge.svg" alt=""></a>
+        </div>
+    </div>
+</section>  
+
+<!-------- About------>
+
+<section id="about">
+    <div class="section-wrapper">
+        <div class="section-title">
+            <h1>About Us</h1>
+            <p>Know The Team</p>
+        </div>
+        <div class="row">
+            <div class="about-col">
+                <img class="prof-img" src="images/pran.jpg" alt="">
+                <h1 class="prof-name">Pranay Goel, CEO</h1>
+                <p>"I'm a creative person, and
+                    keep good knowledge in the field of design and coding. So I would be able to help the company build an efficient user interface that would suit people of different generations and age groups."</p>
+            </div>
+            <div class="about-col">
+                <img class="prof-img" src="images/mrin.jpeg" alt="">
+                <h1 class="prof-name">Mrinmoy Dasgupta, COO</h2>
+                <p>"I’m highly passionate in creative areas, especially when it consists of pushing my artistic limits to it’s extent. I love challenges and have a great blend of intuition and analysis.
+                    I try to bring the best of all the individuals I work with."</p>
+            </div>
+            <div class="about-col">
+                <img class="prof-img" src="images/shub.jpeg" alt="">
+                <h1 class="prof-name">Subhodeep Polley, CFO</h1>
+                <p>"I am a good team player.
+                    I love to maintain professionalism in any place I work. I have good work ethics and feel deeply passionate towards anything I pursue in order to give the best possible results."</p>
+            </div>
+        </div>
+        <div>
+            <a href="" class="about-btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!--------Services-->
+
+<section id="services">
+    <div class="section-wrapper">
+        <div class="service-header">
+            <h1>Services We Provide</h1>
+            <p>Unlimited access to a huge catalog of E-books.</p>
+        </div>
+        <div class="row">
+            <div class="service-box">
+                <div class="service-box-title">
+                    <h1>Streaming</h1>
+                </div>
+                <div class="service-box-inner">
+                    <h1>01</h1>
+                    <h2>Streaming</h2>
+                    <p>Read on the go,no need to download.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-box-title">
+                    <h1>Affordable</h1>
+                </div>
+                <div class="service-box-inner">
+                    <h1>02</h1>
+                    <h2>Affordable</h2>
+                    <p>Have access to the bestbooks at a nominal cost.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-box-title">
+                    <h1>Personalized</h1>
+                </div>
+                <div class="service-box-inner">
+                    <h1>03</h1>
+                    <h2>Personalized</h2>
+                    <p>Create your own virtual library.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-box-title">
+                    <h1>Community</h1>
+                </div>
+                <div class="service-box-inner">
+                    <h1>04</h1>
+                    <h2>Community</h2>
+                    <p>Discuss with other readers about your favourite books.</p>
+                </div>
+            </div>
+        </div>  
+    </div>  
+
+</section>
+
+<section id="subscribe">
+    <div class="section-wrapper">
+        <div class="section-header">
+            <h1>Subscribe to a Membership</h1>
+            <p>Choose any of the plans below to proceed</p>
+        </div>
+        <div class="subscription-plans">
+            <div class="subscription-plan">
+                <h2>Basic</h2>
+                <h1>Free</h1>
+                <h4></h4>
+                <img src="images/subscription/free.png" alt="">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button>Choose</button>
+            </div>
+            <div class="subscription-plan">
+                <h2>Standard</h2>
+                <h1>$1.85</h1>
+                <h4>per month</h4>
+                <img src="images/subscription/standard.png" alt="">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button>Choose</button>
+            </div>
+            <div class="subscription-plan">
+                <h2>Premium</h2>
+                <h1>$3.00</h1>
+                <h4>per month</h4>
+                <img src="images/subscription/premium.png" alt="">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button>Choose</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----contact---->
+
+<section id="contact" class="contact-bg">
+    <div class="overlay-wrapper">
+        <div class="section-header">
+            <h1>Get in touch</h1>
+            <span class="divider"></span>
+            <p class="contact-description" data-aos="fade" data-aos-delay = "500">Feel free to send us a message!</p>
+        </div>
+        <div class="contact-wrapper">
+            <form data-aos="fade-right" id="contactform" class="form-wrapper" method="POST" autocomplete="off" action="https://formsubmit.co/goel.2002pranay@gmail.com"> <input type="text" name="_gotcha" style="display:none">
+              <div class="input-wrapper"> <label for="name" class="input-label">Name</label> <input type="text" name="name" class="contact-input" id="name" required="" placeholder="John Doe"> </div>
+              <div class="input-wrapper"> <label for="email" class="input-label">Email</label> <input type="email" name="email" class="contact-input" id="email" required="" placeholder="xyz@email.com"> </div>
+              <div class="input-wrapper"> <label for="subject" class="input-label">Subject</label> <input type="text" name="_subject" class="contact-input" id="subject" required="" placeholder="Collaboration on Project / Enquiry"> </div>
+              <div class="input-wrapper"> <label for="message" class="input-label" id="message-label">Message</label> <textarea name="message" class="contact-input autoExpand" id="message" required=""
+                  placeholder="Please, Leave a short Message."></textarea> </div>
+              <button type="submit" name="submit" class="message-btn"> <span>Send Message</span> </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="section-wrapper">
+        <ul class="soc">
+          <li class="soc-item"><a href="mailto:goel.2002pranay@gmail.com" target="_blank" class="icon" title="email"><img src="images/icons/email.svg" alt="email"></a></li>
+          <li class="soc-item"><a href="https://twitter.com/" target="_blank" class="icon" title="twitter"><img src="images/icons/twitter.svg" alt="twitter"></a></li>
+          <li class="soc-item"><a href="https://instagram.com/" target="_blank" class="icon" title="instagram"><img src="images/icons/instagram.svg" alt="instagram"></a></li>
+          <li class="soc-item"><a href="https://facebook.com/" target="_blank" class="icon facebook" title="facebook"><img class ="facebook" src="images/icons/facebook.svg" alt="facebook"></a></li>
+          <li class="soc-item"><a href="https://github.com/" target="_blank" class="icon" title="github"><img src="images/icons/github.svg" alt="github"></a></li>
+          <li class="soc-item"><a href="https://www.linkedin.com/in/" target="_blank" class="icon" title="linkedin"><img src="images/icons/linkedin.svg" alt="linkedin"></a></li>
+        </ul>
+        <div class="copyright-wrapper center">
+          <p>©&nbsp;&nbsp;PRANAY GOEL, 2021</p>
+        </div>
+      </div>
+</footer>
+
+<!---------JavaScript for Toggle Menu------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="/js/script.js"></script>
+<script src="/js/scroll_nav.js"></script>
+    
+</body>
+</html>
