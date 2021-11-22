@@ -6,36 +6,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6899c61b13.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="/css/scroll_nav.css"> -->
 </head>
 <body>
-<section class="header">
-    <div id="navBar" class="">
-        <nav id="topNavbar" class="topNav navbar-fixed-top">
-            <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" oneclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#subscribe">SUBSCRIPTION</a></li>
-                    <li><a href="#contact">CONTACT</a></li>                    
-                    <li class="signup"><a href="">SIGN UP/ LOGIN</a></li>                    
+<section id="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subscribe">SUBSCRIPTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item signup">
+                        <a class="nav-link" href="#">SIGN UP/ LOGIN</a>
+                    </li>
                 </ul>
             </div>
-            <i class="fa fa-bars" oneclick="showMenu()"></i>
-        </nav>
-    </div>
-    <div class="text-box">
-        <h1 class="header-text">Bibliophilia.</h1>
-        <p>Reading has never been easy before!</p>
-        <a href="#subscribe" class="hero-btn">Subscribe Now</a>
-        <div class="store-btn">
-            <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="images/app-store-badge.svg" alt=""></a>
-            <a href="https://play.google.com/store" target="_blank"><img src="images/google-play-badge.svg" alt=""></a>
+        </div>
+    </nav>
+    <div class="container-fluid flex-center">
+        <div class="row">
+            <div class="col-sm col-md-12">
+                <h1 class="header-text">Bibliophilia.</h1>
+            </div>
+            <div class="col-sm col-md-12">
+                <p>Reading has never been easy before!</p>
+            </div>
+            <div class="col-sm col-md-12">
+                <a href="#subscribe" class="hero-btn">Subscribe Now</a>
+            </div>
+            <div class="row store-link-row">
+                <a class="col-xs-4 col-sm-3 col-md-3 store-img-wrapper" href="https://www.apple.com/in/app-store/" target="_blank"><img class="store-img" src="images/app-store-badge.svg" alt=""></a>
+                <a class="col-xs-4 col-sm-3 col-md-3 store-img-wrapper" href="https://play.google.com/store" target="_blank"><img class="store-img" src="images/google-play-badge.svg" alt=""></a>
+            </div>
         </div>
     </div>
 </section>  
@@ -43,33 +66,30 @@
 <!-------- About------>
 
 <section id="about">
-    <div class="section-wrapper">
-        <div class="section-title">
+    <div class="container-fluid pt-8">
+        <div class="container-fluid">
             <h1>About Us</h1>
             <p>Know The Team</p>
         </div>
         <div class="row">
-            <div class="about-col">
+            <div class="about-col col-sm col-md-4">
                 <img class="prof-img" src="images/pran.jpg" alt="">
                 <h1 class="prof-name">Pranay Goel, CEO</h1>
                 <p>"I'm a creative person, and
                     keep good knowledge in the field of design and coding. So I would be able to help the company build an efficient user interface that would suit people of different generations and age groups."</p>
             </div>
-            <div class="about-col">
+            <div class="about-col col-sm col-md-4">
                 <img class="prof-img" src="images/mrin.jpeg" alt="">
                 <h1 class="prof-name">Mrinmoy Dasgupta, COO</h2>
                 <p>"I’m highly passionate in creative areas, especially when it consists of pushing my artistic limits to it’s extent. I love challenges and have a great blend of intuition and analysis.
                     I try to bring the best of all the individuals I work with."</p>
             </div>
-            <div class="about-col">
+            <div class="about-col col-sm col-md-4">
                 <img class="prof-img" src="images/shub.jpeg" alt="">
                 <h1 class="prof-name">Subhodeep Polley, CFO</h1>
                 <p>"I am a good team player.
                     I love to maintain professionalism in any place I work. I have good work ethics and feel deeply passionate towards anything I pursue in order to give the best possible results."</p>
             </div>
-        </div>
-        <div>
-            <a href="" class="about-btn">Read More</a>
         </div>
     </div>
 </section>
@@ -77,13 +97,13 @@
 <!--------Services-->
 
 <section id="services">
-    <div class="section-wrapper">
-        <div class="service-header">
+    <div class="container-fluid">
+        <div class="section-header service-header">
             <h1>Services We Provide</h1>
             <p>Unlimited access to a huge catalog of E-books.</p>
         </div>
         <div class="row">
-            <div class="service-box">
+            <div class="service-box col-sm col-md-3">
                 <div class="service-box-title">
                     <h1>Streaming</h1>
                 </div>
@@ -93,7 +113,7 @@
                     <p>Read on the go,no need to download.</p>
                 </div>
             </div>
-            <div class="service-box">
+            <div class="service-box col-sm col-md-3">
                 <div class="service-box-title">
                     <h1>Affordable</h1>
                 </div>
@@ -103,7 +123,7 @@
                     <p>Have access to the bestbooks at a nominal cost.</p>
                 </div>
             </div>
-            <div class="service-box">
+            <div class="service-box col-sm col-md-3">
                 <div class="service-box-title">
                     <h1>Personalized</h1>
                 </div>
@@ -113,7 +133,7 @@
                     <p>Create your own virtual library.</p>
                 </div>
             </div>
-            <div class="service-box">
+            <div class="service-box col-sm col-md-3">
                 <div class="service-box-title">
                     <h1>Community</h1>
                 </div>
@@ -129,16 +149,16 @@
 </section>
 
 <section id="subscribe">
-    <div class="section-wrapper">
+    <div class="container-fluid">
         <div class="section-header">
             <h1>Subscribe to a Membership</h1>
             <p>Choose any of the plans below to proceed</p>
         </div>
-        <div class="subscription-plans">
-            <div class="subscription-plan">
+        <div class="subscription-plans row">
+            <div class="subscription-plan col-sm col-md-4">
                 <h2>Basic</h2>
                 <h1>Free</h1>
-                <h4></h4>
+                <h4>lifetime</h4>
                 <img src="images/subscription/free.png" alt="">
                 <ul>
                     <li>Feature 1</li>
@@ -147,7 +167,7 @@
                 </ul>
                 <button>Choose</button>
             </div>
-            <div class="subscription-plan">
+            <div class="subscription-plan col-sm col-md-4">
                 <h2>Standard</h2>
                 <h1>$1.85</h1>
                 <h4>per month</h4>
@@ -159,7 +179,7 @@
                 </ul>
                 <button>Choose</button>
             </div>
-            <div class="subscription-plan">
+            <div class="subscription-plan col-sm col-md-4">
                 <h2>Premium</h2>
                 <h1>$3.00</h1>
                 <h4>per month</h4>
@@ -178,8 +198,8 @@
 <!-----contact---->
 
 <section id="contact" class="contact-bg">
-    <div class="overlay-wrapper">
-        <div class="section-header">
+    <div class="overlay-wrapper container-fluid">
+        <div class="section-header contact-header">
             <h1>Get in touch</h1>
             <span class="divider"></span>
             <p class="contact-description" data-aos="fade" data-aos-delay = "500">Feel free to send us a message!</p>
@@ -209,7 +229,7 @@
           <li class="soc-item"><a href="https://www.linkedin.com/in/" target="_blank" class="icon" title="linkedin"><img src="images/icons/linkedin.svg" alt="linkedin"></a></li>
         </ul>
         <div class="copyright-wrapper center">
-          <p>©&nbsp;&nbsp;PRANAY GOEL, 2021</p>
+          <p>All rights reserved | ©&nbsp;&nbsp;PRANAY GOEL, 2021</p>
         </div>
       </div>
 </footer>
@@ -225,8 +245,8 @@
         navLinks.style.right = "-200px";
     }
 </script>
-<script src="js/script.js"></script>
-<script src="js/scroll_nav.js"></script>
-    
+<script src="/js/script.js"></script>
+<script src="/js/scroll_nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
